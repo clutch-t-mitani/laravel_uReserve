@@ -30,6 +30,7 @@ Route::middleware([
     })->name('dashboard');
 });
 
+//これでnameもつく!
 Route::prefix('manager')
 ->middleware('can:manager-higher')
 ->group(function(){
@@ -45,7 +46,7 @@ Route::middleware('can:user-higher')
 
 Route::controller(LivewireTestController::class)
 ->prefix('livewire-test')->name('livewire-test.')->group(function(){
-    Route::get('/index', 'index')->name('index'); 
+    Route::get('/index', 'index'); 
     Route::get('/register', 'register')->name('registar'); 
 });
 
