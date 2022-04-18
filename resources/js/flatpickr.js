@@ -4,7 +4,13 @@ import { Japanese } from "flatpickr/dist/l10n/ja.js"
 flatpickr("#event_date", {
   "locale": Japanese ,
   minDate: "today",
-  maxDate: new Date().fp_incr(30) // 14 days from now
+  maxDate: new Date().fp_incr(30) // 30 days from now
+});
+
+flatpickr("#calendar", {
+  "locale": Japanese ,
+  // minDate: "today",
+  maxDate: new Date().fp_incr(30) // 30 days from now
 });
 
   const setting = {
@@ -15,6 +21,8 @@ flatpickr("#event_date", {
     time_24hr: true,
     minTime: "10:00",
     maxTime: "20:00",
+    //30分単位って意味
+    minuteIncrement:30
   }
 
 flatpickr("#start_time", setting );
