@@ -2882,7 +2882,8 @@ __webpack_require__.r(__webpack_exports__);
   minDate: "today",
   maxDate: new Date().fp_incr(30) // 30 days from now
 
-});
+}); //ここはinputタグのIDと紐づいてる
+
 (0,flatpickr__WEBPACK_IMPORTED_MODULE_0__["default"])("#calendar", {
   "locale": flatpickr_dist_l10n_ja_js__WEBPACK_IMPORTED_MODULE_1__.Japanese,
   // minDate: "today",

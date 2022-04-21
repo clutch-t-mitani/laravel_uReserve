@@ -7,6 +7,7 @@ flatpickr("#event_date", {
   maxDate: new Date().fp_incr(30) // 30 days from now
 });
 
+//ここはinputタグのIDと紐づいてる
 flatpickr("#calendar", {
   "locale": Japanese ,
   // minDate: "today",
