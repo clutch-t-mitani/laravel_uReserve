@@ -70,11 +70,11 @@ class EventController extends Controller
     public function show(Event $event)
     {
         $event = Event::findOrFail($event->id);
-
         //中間テーブルの情報をモデルから取得している イベントに紐づくユーザを取得
         $users = $event->users;
 
         $reservations = [];
+        
         foreach($users as $user)
         {
             $reservedInfo = [
