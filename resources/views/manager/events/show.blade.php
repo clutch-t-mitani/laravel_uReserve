@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            イベント新規登録
+          イベント詳細
         </h2>
     </x-slot>
     <div class="pt-4 pb-2">
@@ -43,7 +43,7 @@
                         <div class="md:flex justify-between items-end">
                             <div class="mt-4">
                                 <x-jet-label for="max_people" value="定員数" />
-                                {{ $event->max_people}}
+                                {{ $event->max_people }}
                             </div>
                             <div class="flex space-x-4 justify-around">
                                 @if($event->is_visible)
